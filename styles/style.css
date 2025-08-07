@@ -125,7 +125,7 @@ h1 {
     width: 100%;
     max-width: 1150px;
     height: 500px;
-    background-image: url(resorces/title-bg.png);;
+    background-image: url(../resorces/title-bg.png);;
     background-repeat: no-repeat;
 }
 
@@ -269,7 +269,7 @@ h1 {
 }
 
 .flat__bg {
-    background-image: url(resorces/bg-bottom.png);
+    background-image: url(../resorces/bg-bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -314,7 +314,7 @@ h1 {
     display: block;
     width: 13px;
     height: 22px;
-    background-image: url('resorces/phone-icon.png');
+    background-image: url('../resorces/phone-icon.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
