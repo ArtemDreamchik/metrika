@@ -437,7 +437,10 @@ h2 {
     }
 
     .about {
+        left: 40px;
+        bottom: 30px;
         width: 100%;
+        max-width: 430px;
     }
 
     .about__title {
@@ -446,6 +449,7 @@ h2 {
 
     .description {
         width: 100%;
+        max-width: 690px;
     }
 
     .welcome {
@@ -469,11 +473,119 @@ h2 {
         width: 100%;
     }
 
-    .project__title {
+    .projects__title {
         margin-top: 115px;
     }
 
     .project__card {
         margin-bottom: 80px;
+    }
+
+    .learn-more {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 959px) {
+    .main {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    h1 {
+        width: 100%;
+        height: auto;
+
+        font-size: 30px;
+        line-height: 31px;
+    }
+
+    .about__wrapper {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .about {
+        left: 15px;
+        bottom: 15px;
+        width: 100%;
+        max-width: 312px;
+        height: auto;
+        min-height: 90px;
+
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .about__title {
+        margin-top: 75px;
+        font-size: 14px;
+    }
+
+    .description {
+        width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .welcome {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .projects {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .projects__image {
+        margin-bottom: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .projects__title {
+        margin-top: 20px;
+        margin-bottom: 11px;
+        font-size: 18px;
+    }
+
+    .project__link{
+        font-size: 16px;
+    }
+
+    .project__card {
+        margin-bottom: 80px;
+    }
+
+    .projects__more-link {
+        font-size: 22px;
+    }
+
+    .projects__image {
+        min-height: 250px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .learn-more {
+        height: 51px;
+        max-width: 199px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        padding: 15px 30px;
     }
 }
