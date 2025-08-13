@@ -459,8 +459,9 @@ h2 {
         padding-left: 15px;
         padding-right: 15px;
 
-        background-position: 50% 50%;
+        background-position: 50%;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .projects {
@@ -474,11 +475,15 @@ h2 {
     }
 
     .projects__title {
-        margin-top: 115px;
+        margin-top: 15px;
     }
 
     .project__card {
         margin-bottom: 80px;
+    }
+
+    .projects__more-link {
+        margin-bottom: 100px;
     }
 
     .learn-more {
@@ -505,6 +510,7 @@ h2 {
         width: 100%;
         padding-left: 12px;
         padding-right: 12px;
+        height: 304px;
     }
 
     .about {
@@ -514,7 +520,7 @@ h2 {
         max-width: 312px;
         height: auto;
         min-height: 90px;
-
+        letter-spacing: -0.48px;
         font-size: 16px;
         line-height: normal;
     }
@@ -526,21 +532,23 @@ h2 {
 
     .description {
         width: 100%;
+        max-width: 346px;
         min-height: 100%;
-        max-height: 100%;
+        max-height: 300px;
         font-size: 22px;
         line-height: normal;
+        letter-spacing: -0.66px;
     }
 
     .welcome {
-        width: 100%;
+        max-width: 100%;
         min-height: 300px;
         height: auto;
-        padding-left: 12px;
-        padding-right: 12px;
-
-        background-position: 50% 50%;
+        padding-left: 0;
+        padding-right: 0;
+        background-position: 50%;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .projects {
@@ -570,6 +578,11 @@ h2 {
 
     .projects__more-link {
         font-size: 22px;
+
+        padding-top: 37px;
+        padding-bottom: 37px;
+
+        margin-bottom: 80px;
     }
 
     .projects__image {
