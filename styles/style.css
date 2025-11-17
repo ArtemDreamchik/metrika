@@ -251,12 +251,21 @@ h1 {
     margin-bottom: 22px;
 }
 
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px 10px;
+}
+
 .service__card {
-    margin-bottom: 58px;
+    position: relative;
+    width: calc(50% - 5px);
 }
 .service__image {
-    width: 1150px;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 25px;
 }
 .service__title {
     color: white;
@@ -266,8 +275,90 @@ h1 {
     letter-spacing: -0.9px;
 }
 
+.services__link-wrapper {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.services__link {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    border: none;
+
+    background-color: #AD1818;
+    border-radius: 5px;
+
+    font-family: Manrope, Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -0.9px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+
+    padding: 0;
+}
+
+.label-wrapper {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    padding: 5px 21px;
+
+    border-radius: 5px;
+    background-color: #AD1818;
+}
+
+.service__label  {
+    color: #fff;
+    font-size: 22px;
+    line-height: normal;
+    letter-spacing: -0.66px ;
+}
+
 .last-item {
     margin: 0px;
+}
+
+.feedback__section {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 150px;
+}
+
+.feedback__section-title {
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.feedback__card {
+    width: calc(50% - 45px);
+    margin-top: 30px;
+}
+
+.last__card {
+    width: 75%;
+}
+
+.feedback__card-title {
+    font-size: 45px;
+    letter-spacing: -1.35px;
+    line-height: normal;
+}
+
+.feedback__card-description {
+    font-size: 22px;
+    letter-spacing: -0.66px;
+    line-height: normal;
 }
 
 .flat__bg {
@@ -489,6 +580,91 @@ h2 {
     .learn-more {
         font-size: 20px;
     }
+  
+    .services { 
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .services__title {
+    
+    }
+    
+    .card-wrapper {
+        width: 100%;
+    }
+    
+    .service__card {
+    
+    }
+    
+    .service__image {
+        margin-bottom: 15px;
+    }
+    
+    .service__title {
+        font-size: 25px;
+        letter-spacing: -0.75px;
+    }
+
+    .label-wrapper {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+
+        padding: 7px 27px;
+
+        border-radius: 5px;
+        background-color: #AD1818;
+    }
+
+    .service__label  {
+        color: #fff;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: -0.6px ;
+    }
+
+    .feedback__section {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    .feedback__section-title {
+        margin-top: 120px;
+        font-size: 18px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .feedback__card {
+        width: calc(50% - 5px);
+        margin-top: 30px;
+    }
+
+    .last__card {
+        margin-top: 80px;
+        width: 75%;
+    }
+
+    .feedback__card-title {
+        font-size: 35px;
+        letter-spacing: -1.05px;
+        line-height: normal;
+    }
+
+    .feedback__card-description {
+        font-size: 20px;
+        letter-spacing: -0.6px;
+        line-height: normal;
+    }
 }
 
 @media (max-width: 959px) {
@@ -600,5 +776,43 @@ h2 {
         line-height: normal;
         letter-spacing: -0.5px;
         padding: 15px 30px;
+    }
+    
+    .services__title {
+        font-size: 14px;
+    }
+    
+    .card-wrapper {
+        gap: 60px 10px;
+    }
+    
+    .service__card {
+        width: 100%;
+    }
+    
+    .service__image {
+        margin-bottom: 10px;
+    }
+    
+    .service__title {
+        font-size: 18px;
+    }
+
+    .label-wrapper {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+
+        padding: 5px 23px;
+
+        border-radius: 5px;
+        background-color: #AD1818;
+    }
+
+    .service__label  {
+        color: #fff;
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: -0.42px ;
     }
 }
