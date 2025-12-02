@@ -521,7 +521,7 @@ h1 {
     content: '';
     display: block;
 
-    background-image: url(/resorces/phone-icon.png);
+    background-image: url(../resorces/phone-icon.png);
     background-repeat:no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -560,7 +560,7 @@ h1 {
     content: '';
     display: block;
 
-    background-image: url(/resorces/mail-icon.png);
+    background-image: url(../resorces/mail-icon.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -910,7 +910,7 @@ h2 {
         content: '';
         display: block;
 
-        background-image: url(/resorces/phone-icon.png);
+        background-image: url(../resorces/phone-icon.png);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -949,7 +949,7 @@ h2 {
         content: '';
         display: block;
 
-        background-image: url(/resorces/mail-icon.png);
+        background-image: url(../resorces/mail-icon.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -1279,7 +1279,7 @@ h2 {
         content: '';
         display: block;
 
-        background-image: url(/resorces/phone-icon.png);
+        background-image: url(../resorces/phone-icon.png);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -1318,7 +1318,7 @@ h2 {
         content: '';
         display: block;
 
-        background-image: url(/resorces/mail-icon.png);
+        background-image: url(../resorces/mail-icon.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
