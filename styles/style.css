@@ -8,12 +8,15 @@ body {
   
 }
 
-html, body {
-  overflow-x: hidden;
+.body_fixed {
+    overflow: hidden;
 }
 
 
 .header {
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     max-width: 1150px;
     height: 25px;
@@ -22,6 +25,31 @@ html, body {
     box-sizing: border-box;
     margin-top: 32px;
     margin-bottom: 73px;
+}
+
+.burger {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.burger_open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger__content {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
 }
 
 .logo__link {
@@ -41,9 +69,9 @@ html, body {
 }
 
 .nav {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-    margin-left: 549px;
 
     vertical-align: middle;
 
@@ -51,8 +79,6 @@ html, body {
 }
 
 .nav__link {
-    margin-right: 60px;
-
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -67,6 +93,10 @@ html, body {
     text-decoration-thickness: 1px;
     text-underline-offset: 6.5px;
     opacity: 0.5;
+}
+
+.burger-btn {
+    display: none;
 }
 
 .main {
@@ -127,7 +157,6 @@ h1 {
 }
 
 .welcome {
-    
     width: 100%;
     max-width: 1150px;
     min-height: 500px;
@@ -290,6 +319,7 @@ h1 {
     height: 150px;
     margin: 0 auto;
     border: none;
+    cursor: pointer;
 
     background-color: #AD1818;
     border-radius: 5px;
@@ -325,6 +355,129 @@ h1 {
 
 .last-item {
     margin: 0px;
+}
+
+    
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup_open {
+    display: flex;
+}
+
+.popup__content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 777px;
+    height: 708px;
+    box-sizing: border-box;
+
+}
+
+.popup__title {
+    color: #000;
+    text-align: center;
+    font-size: 45px;
+    line-height: normal;
+    letter-spacing: -1.35px;
+    padding-top: 95px;
+    margin-bottom: 5px;
+}
+
+.popup__description {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: -0.54px;
+}
+
+.popup__close-btn {
+    position: relative;
+}
+
+.popup__x {
+    background-image: url(../resorces/popup-close.svg);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 35px;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 640px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.name_form {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    height: 44px;
+}
+
+.email_form {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    height: 44px;
+}
+
+.phone_form {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    height: 44px;
+}
+
+.popup__send-btn-wrapper {
+    width: 100%;
+    max-width: 644px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.popup__send-btn {
+    width: 100%;
+    height: 67px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+
+    background-color: #AD1818;
+    border-radius: 5px;
+
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
 }
 
 .feedback__section {
@@ -449,7 +602,7 @@ h1 {
     line-height: 41px;
     color: white;
 
-    width: 443px;
+    max-width: 443px;
 
     left: 125px;
     bottom: 60px;
@@ -470,10 +623,11 @@ h1 {
 
 
 .contacts {
+    box-sizing: border-box;
     width: 100%;
-    max-width: 1150px;
-    margin: 0 auto;
+    max-width: 1025px;
     margin-bottom: 160px;
+    margin-left: 125px;
 }
 
 .contacts__content {
@@ -584,7 +738,9 @@ h1 {
 }
 
 .footer__nav {
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
     margin: 0 auto;
 
     padding-top: 60px;
@@ -596,8 +752,7 @@ h1 {
 }
 
 .footer-nav__link {
-    display: inline-block;
-    margin-right: 60px;
+    display: block;
 
     font-size: 18px;
     font-weight: 400;
@@ -633,6 +788,31 @@ h2 {
 }
 
 @media (max-width: 1149px) {
+    .header {
+        width: 100%;
+        max-width: 1149px;
+        justify-content: space-between
+    }
+
+    .logo__link {
+        margin-left: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-btn {
+        cursor: pointer;
+        display: block;
+        margin-right: 15px;
+    }
+    
+    .burger-btn_img {
+        width: 50px;
+        height: auto;
+    }
+
     .main {
         width: 100%;
         padding-left: 15px;
@@ -858,11 +1038,10 @@ h2 {
 
     .contacts {
     width: 100%;
-    max-width: 960px;
+    max-width: 900px;
     margin-top: 120px;
     margin-bottom: 120px;
-    margin-left: 17px;
-    padding-right: 27px;
+    margin-left: 15px;
     }
 
     .contacts__content {
@@ -964,6 +1143,35 @@ h2 {
     }
 
 @media (max-width: 959px) {
+    .header {
+        width: 100%;
+        max-width: 959px;
+        justify-content: space-between
+    }
+
+    .logo__link {
+        margin-left: 15px;
+    }
+    
+    .logo {
+        width: 95px;
+        height: 16px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+        margin-right: 15px;
+    }
+    
+    .burger-btn_img {
+        width: 35px;
+        height: 5px;
+        height: auto;
+    }
     .main {
         width: 100%;
         padding-left: 12px;
@@ -1227,11 +1435,10 @@ h2 {
 
     .contacts {
     width: 100%;
-    max-width: 375px;
+    max-width: 300px;
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 17px;
-    padding-right: 27px;
+    margin-left: 15px;
     }
 
     .contacts__content {
@@ -1327,5 +1534,78 @@ h2 {
         height: 16px;
 
         margin-bottom: 15px;
+    }
+    
+    
+
+    .popup__content {
+    width: 100%;
+    height: 611px;
+
+    }
+
+    .popup__title {
+        font-size: 25px;
+        letter-spacing: -0.75px;
+        padding-top: 80px;
+        margin-bottom: 11px;
+    }
+
+    .popup__description {
+        min-width: 209px;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: -0.42px;
+    }
+
+    .popup__x {
+        background-image: url(../resorces/popup-close1.svg);
+        width: 30px;
+        height: 30px;
+        top: 40px;
+        right: 29px;
+    }
+
+    .form {
+        margin-top: 70px;
+        width: 280px;
+        gap: 40px;
+    }
+
+    .name_form {
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .email_form {
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .phone_form {
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .footer__nav {
+        max-width: 290px;
+        margin-bottom: 40px;
+    }
+
+    .footer-nav__link {
+        display: block;
+        font-size: 12px;
+        letter-spacing: -0.36px;
+    }
+
+    .footer__title {
+        font-size: 13px;
+    }
+
+    .popup__send-btn-wrapper {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        margin-top: 80px;
     }
 }

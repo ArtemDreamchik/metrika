@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-    <div class="header">
+    <header class="header">
         <a href="/" class="logo__link">
             <img src="resorces/metrika.png" alt="" class="logo">
         </a>
@@ -32,8 +31,16 @@
                 КОНТАКТЫ
             </a>
         </div>
-    </div>
+        <div class="burger-btn">
+            <img class="burger-btn_img" src="resorces/burger-button.svg" alt="">
+        </div>
+    </header>
 
+    <div class="burger">
+        <div class="burger__content">
+            
+        </div>
+    </div>
     
     <div class="main">
         <h1>Современные и стильные интерьеры для комфортной жизни</h1>
@@ -108,7 +115,50 @@
                 </div>
             </div>
             <div class="services__link-wrapper">
-                <button href="/" class="services__link">Заказать услугу</button>
+                <button href="/" class="services__link js-btn">Заказать услугу</button>
+            </div>
+            <div class="popup js-popup">
+                <div class="popup__content">
+                    <div class="js-popup__close-btn popup__x"></div>
+                    <h3 class="popup__title">
+                        Заказать услугу
+                    </h3>
+                    <p class="popup__description">
+                        Заполните форму, мы свяжемся с вами в течение суток
+                    </p>
+                    <form action="" class="form">
+                        <label for="" class="name">
+                            <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            placeholder="Имя" 
+                            required
+                            class="name_form">
+                        </label>
+                        <label for="" class="email">
+                            <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="Электронная почта" 
+                            required
+                            class="email_form">
+                        </label>
+                        <label for="" class="phone">
+                            <input 
+                            type="tel" 
+                            name="phone" 
+                            id="phone" 
+                            placeholder="Номер телефона" 
+                            required
+                            class="phone_form">
+                        </label>
+                    </form>
+                    <div class="popup__send-btn-wrapper">
+                        <button href="/" class="popup__send-btn">Отправить</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -211,5 +261,7 @@
         </div>
     </div>
     <script src="gallery.js"></script>
+    <script src="popup.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>
